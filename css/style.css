@@ -1,0 +1,322 @@
+html{
+  height: max-content;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 0px) {
+
+  body{
+    max-width: 2000px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto;
+    background: #afb4b4;
+  }
+
+  header{
+    background-image: url("../img/Pattern-PNG-Transparent2.png");
+    background-position: 5% 0px;
+    transition: background-position 2s ease-in;
+    color: rgb(0, 7, 2);
+    padding: 20px 0px 10px 0px;
+    text-transform: uppercase;
+  }
+
+  header h1{
+    margin: 20px 0px 10px 0px;
+    font: 100 16px Arial;
+    letter-spacing: 4px;
+    background-color: rgb(125 181 176);
+  }
+
+  nav{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  nav p{
+    font: 500 32px Calibri;
+    margin: 0px 5px 0px 5px;
+  }
+
+  nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 100 32px Arial;
+    letter-spacing: 0px;
+    margin: 0px 10px 0px 10px;
+    color: rgb(0, 15, 15);
+  }
+
+  nav a:hover{
+    font-family: 'Times New Roman', Times, serif;
+    /* margin: -20px 32px 20px 25px; */
+  }
+
+
+  h1{
+    text-transform: uppercase;
+    font: 100 40px Arial;
+    letter-spacing: -2px;
+    margin: 45px 0px;
+  }
+
+  .main-description{
+    padding: 20px 20px 0px 20px;
+    margin: 0 auto;
+    margin-top: 0px;
+    display: flex;
+    /* width: 65%; */
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+
+  .main-description p{
+    margin: 15px 5px 5px 5px;
+    /* width: 50%; */
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+
+  .main-description div{
+    margin: auto;
+    width: 70%;
+  }
+
+  .avatar-photo{
+    width: 100%;
+  }
+
+
+  .skills{
+    width: 100%;
+    background-image: url("../img/Pattern-PNG-Transparent2.png");
+    background-position: 5% 0px;
+    transition: background-position 2s ease-in;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .skills-run{
+    width: 100%;
+  }
+
+  svg{
+    width: 100%;
+    position: relative;
+    -webkit-animation: pop-out 2s ease-in-out infinite;
+            animation: pop-out 2s ease-in-out infinite;
+  }
+
+  .word{
+      text-transform: uppercase;
+      font-family: Arial;
+      font-size: 16px;
+      fill:#000208;
+  }
+
+  @-webkit-keyframes pop-out {
+      0% {
+        transform: scale3d(0, 0, 1);
+        opacity: 1;
+      }
+      25% {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale3d(1.5, 1.5, 1);
+        opacity: 0;
+      }
+    }
+    
+  @keyframes pop-out {
+      0% {
+        transform: scale3d(0, 0, 1);
+        opacity: 1;
+      }
+      25% {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale3d(1.5, 1.5, 1);
+        opacity: 0;
+      }
+  }
+
+  .skills-text{
+    width: 100%;
+    background: #afb4b4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-text-content{
+    margin: 40px 0px 40px 0px;
+    width: 90%;
+    letter-spacing: 1px;
+    font: 400 14px system-ui;
+  }
+
+  .skills-text-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skills-text-block div{
+    margin: 0px 12px;
+  }
+
+  .skills-text-block p{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-text-block img{
+    height: 14px; 
+    margin: 5px 0px 0px 0px;
+  }
+
+
+  .portfolio{
+    width: 100%;
+    background-image: url("../img/Pattern-PNG-Transparent2.png");
+    background-position: 5% 0px;
+    transition: background-position 2s ease-in;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .portfolio-content{
+    width: 100%;
+    background: #afb4b4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-content-block{
+    margin: 0px 0px 15px 0px;
+    width: 90%;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+  .portfolio-content-block h2{
+    text-align: center;
+    text-transform: uppercase;
+    font: 100 30px Arial;
+  }
+
+  .portfolio-work{
+    margin: 20px 0px;
+  }
+
+  .portfolio-work p:first-child{
+    font-size: 20px;
+    margin-bottom: -5px;
+  }
+
+  .portfolio-work-images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio-work-images img{
+    height: 120px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  footer{
+    height: 120px;
+    background-image: url("../img/Pattern-PNG-Transparent2.png");
+    background-position: 5% 0px;
+    transition: background-position 2s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-links img{
+    height: 30px;
+  }
+
+  .social-links a{
+    margin: 0px 30px;
+    text-decoration: none; 
+    font: 100 35px Arial; 
+    color: black; 
+    letter-spacing: -3px;
+  }
+
+  .social-links a:hover{
+    filter: drop-shadow(5px 5px 0px rgb(10, 219, 202));
+  }
+}
+
+
+
+
+/* ################################################################################################ */
+/*                                       РАЗРЕШЕНИЯ                                                 */
+/* ################################################################################################ */
+
+@media (min-width: 480px) {
+
+}
+@media (min-width: 640px) {
+  .word {
+    font-size: 28px;
+  }
+}
+@media (min-width: 960px) {
+  .word {
+    font-size: 44px;
+  }
+}
+@media (min-width: 1280px) {
+  .word {
+    font-size: 54px;
+  }
+}
+@media (min-width: 1440px) {
+  nav p {
+    font: 500 100px Calibri;
+    margin: -20px 50px 20px 50px;
+  }
+  nav a {
+    font: 100 100px Arial;
+    letter-spacing: -10px;
+  }
+  .avatar-photo{
+    width: 65%;
+  }
+  .word {
+    font-size: 54px;
+  }
+}
+
