@@ -16,6 +16,7 @@ html{
 
   header{
     background-image: url("../img/Pattern-PNG-Transparent2.png");
+    background-size: 70%;
     background-position: 5% 0px;
     transition: background-position 2s ease-in;
     color: rgb(0, 7, 2);
@@ -24,7 +25,7 @@ html{
   }
 
   header h1{
-    margin: 20px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
     font: 100 16px Arial;
     letter-spacing: 4px;
     background-color: rgb(125 181 176);
@@ -80,7 +81,8 @@ html{
     /* width: 50%; */
     text-align: left;
     letter-spacing: 2px;
-    font-size: 14px;
+    font: 100 14px Arial;
+    line-height: 22px;
   }
 
   .main-description div{
@@ -96,6 +98,7 @@ html{
   .skills{
     width: 100%;
     background-image: url("../img/Pattern-PNG-Transparent2.png");
+    background-size: 70%;
     background-position: 5% 0px;
     transition: background-position 2s ease-in;
     overflow: hidden;
@@ -181,10 +184,12 @@ html{
     text-align: left;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .skills-text-block img{
-    height: 14px; 
+    height: 4px;
+    width: 110px;
     margin: 5px 0px 0px 0px;
   }
 
@@ -192,6 +197,7 @@ html{
   .portfolio{
     width: 100%;
     background-image: url("../img/Pattern-PNG-Transparent2.png");
+    background-size: 70%;
     background-position: 5% 0px;
     transition: background-position 2s ease-in;
     overflow: hidden;
@@ -239,14 +245,14 @@ html{
   }
 
   .portfolio-work-images img{
-    height: 120px;
-    margin-left: 15px;
+    width: 100%;
     margin-bottom: 15px;
   }
 
   footer{
     height: 120px;
     background-image: url("../img/Pattern-PNG-Transparent2.png");
+    background-size: 70%;
     background-position: 5% 0px;
     transition: background-position 2s ease-in;
     display: flex;
@@ -262,13 +268,13 @@ html{
   }
 
   .social-links img{
-    height: 30px;
+    height: 28px;
   }
 
   .social-links a{
     margin: 0px 30px;
     text-decoration: none; 
-    font: 100 35px Arial; 
+    font: 100 30px Arial; 
     color: black; 
     letter-spacing: -3px;
   }
