@@ -26,7 +26,7 @@ html{
 
   header h1{
     margin: 0px 0px 10px 0px;
-    font: 100 16px Arial;
+    font: 400 16px Arial;
     letter-spacing: 4px;
     background-color: rgb(125 181 176);
   }
@@ -47,7 +47,7 @@ html{
   nav a{
     text-decoration: none;
     text-transform: uppercase;
-    font: 100 32px Arial;
+    font: 400 32px Arial;
     letter-spacing: 0px;
     margin: 0px 10px 0px 10px;
     color: rgb(0, 15, 15);
@@ -61,7 +61,7 @@ html{
 
   h1{
     text-transform: uppercase;
-    font: 100 40px Arial;
+    font: 400 40px Arial;
     letter-spacing: -2px;
     margin: 45px 0px;
   }
@@ -81,7 +81,7 @@ html{
     /* width: 50%; */
     text-align: left;
     letter-spacing: 2px;
-    font: 100 14px Arial;
+    font: 400 15px Arial;
     line-height: 22px;
   }
 
@@ -121,7 +121,7 @@ html{
   .word{
       text-transform: uppercase;
       font-family: Arial;
-      font-size: 16px;
+      font-size: 19px;
       fill:#000208;
   }
 
@@ -219,13 +219,13 @@ html{
     width: 90%;
     text-align: left;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .portfolio-content-block h2{
     text-align: center;
     text-transform: uppercase;
-    font: 100 30px Arial;
+    font: 400 30px Arial;
   }
 
   .portfolio-work{
@@ -274,7 +274,7 @@ html{
   .social-links a{
     margin: 0px 30px;
     text-decoration: none; 
-    font: 100 30px Arial; 
+    font: 400 30px Arial; 
     color: black; 
     letter-spacing: -3px;
   }
