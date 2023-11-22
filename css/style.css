@@ -1,7 +1,15 @@
+@font-face {
+  font-family: Calibri;
+  src: url(../fonts/calibri.ttf);
+}
+
 html{
   height: max-content;
   min-height: 100%;
   scroll-behavior: smooth;
+  background: -webkit-linear-gradient(44deg,#c8d9eb,#338fc2,#c5e1ec); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(44deg,#c8d9eb,#338fc2,#c5e1ec); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 @media (min-width: 0px) {
@@ -11,24 +19,24 @@ html{
     line-height: 1.5;
     text-align: center;
     margin: 0 auto;
-    background: #afb4b4;
+    background-image: url("../img/Pattern-PNG-Transparent2.png");
+    background-size: 90%;
+    background-position: 5% 0px;
+    transition: background-position 2s ease-in;
   }
 
   header{
-    background-image: url("../img/Pattern-PNG-Transparent2.png");
-    background-size: 70%;
-    background-position: 5% 0px;
-    transition: background-position 2s ease-in;
     color: rgb(0, 7, 2);
-    padding: 20px 0px 10px 0px;
+    padding: 20px 0px 20px 0px;
     text-transform: uppercase;
   }
 
   header h1{
-    margin: 0px 0px 10px 0px;
+    padding: 5px 20px;
+    margin: 0px 0px 20px 0px;
     font: 400 16px Arial;
     letter-spacing: 4px;
-    background-color: rgb(125 181 176);
+    background: rgb(255 255 255 / 80%);
   }
 
   nav{
@@ -41,7 +49,7 @@ html{
 
   nav p{
     font: 500 32px Calibri;
-    margin: 0px 5px 0px 5px;
+    margin: -5px 5px 0px 5px;
   }
 
   nav a{
@@ -58,7 +66,6 @@ html{
     /* margin: -20px 32px 20px 25px; */
   }
 
-
   h1{
     text-transform: uppercase;
     font: 400 40px Arial;
@@ -67,7 +74,7 @@ html{
   }
 
   .main-description{
-    padding: 20px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
     margin: 0 auto;
     margin-top: 0px;
     display: flex;
@@ -78,7 +85,6 @@ html{
 
   .main-description p{
     margin: 15px 5px 5px 5px;
-    /* width: 50%; */
     text-align: left;
     letter-spacing: 2px;
     font: 400 15px Arial;
@@ -97,10 +103,6 @@ html{
 
   .skills{
     width: 100%;
-    background-image: url("../img/Pattern-PNG-Transparent2.png");
-    background-size: 70%;
-    background-position: 5% 0px;
-    transition: background-position 2s ease-in;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -121,7 +123,7 @@ html{
   .word{
       text-transform: uppercase;
       font-family: Arial;
-      font-size: 19px;
+      font-size: 24px;
       fill:#000208;
   }
 
@@ -157,7 +159,7 @@ html{
 
   .skills-text{
     width: 100%;
-    background: #afb4b4;
+    background: rgb(255 255 255 / 80%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,7 +169,7 @@ html{
     margin: 40px 0px 40px 0px;
     width: 90%;
     letter-spacing: 1px;
-    font: 400 14px system-ui;
+    font: 400 15px system-ui;
   }
 
   .skills-text-block{
@@ -196,10 +198,6 @@ html{
 
   .portfolio{
     width: 100%;
-    background-image: url("../img/Pattern-PNG-Transparent2.png");
-    background-size: 70%;
-    background-position: 5% 0px;
-    transition: background-position 2s ease-in;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -208,18 +206,17 @@ html{
 
   .portfolio-content{
     width: 100%;
-    background: #afb4b4;
+    background: rgb(255 255 255 / 80%);
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .portfolio-content-block{
-    margin: 0px 0px 15px 0px;
     width: 90%;
     text-align: left;
-    letter-spacing: 1px;
-    font-size: 15px;
+    letter-spacing: 2px;
+    font: 400 15px Arial;
   }
 
   .portfolio-content-block h2{
@@ -228,8 +225,22 @@ html{
     font: 400 30px Arial;
   }
 
-  .portfolio-work{
+  .portfolio-content-block hr{
+    border: rgb(0, 0, 0) solid 0.1px;
+    margin: 0px;
+  }
+
+  .portfolio-theme-button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font: 400 17px Arial;
     margin: 20px 0px;
+    text-decoration: underline;
+  }
+
+  .portfolio-work{
+    margin-bottom: 40px;
   }
 
   .portfolio-work p:first-child{
@@ -251,8 +262,7 @@ html{
 
   footer{
     height: 120px;
-    background-image: url("../img/Pattern-PNG-Transparent2.png");
-    background-size: 70%;
+    /* background-image: url("../img/Pattern-PNG-Transparent2.png"); */
     background-position: 5% 0px;
     transition: background-position 2s ease-in;
     display: flex;
@@ -291,38 +301,165 @@ html{
 /*                                       РАЗРЕШЕНИЯ                                                 */
 /* ################################################################################################ */
 
-@media (min-width: 480px) {
-
-}
 @media (min-width: 640px) {
+
+  body{
+    background-size: 55%;
+  }
+
+  header h1 {
+    margin: 10px 0px 25px 0px;
+    font-size: 17px;
+  }
+
+  nav a {
+    font-size: 40px;
+    margin: 0px 10px 10px 10px;
+  }
+  
+  nav p {
+    font-size: 40px;
+  }
+
+  .main-description {
+    flex-direction: row;
+  }
+
+  .main-description {
+    width: 85%;
+  }
+
+  .main-description p {
+    margin: 15px 40px 5px 5px;
+    width: 85%;
+    font-size: 16px;
+  }
+
   .word {
     font-size: 28px;
   }
+
+  .skills-text-content {
+    font-size: 16px;
+  }
+
+  .portfolio-content-block {
+    font-size: 16px;
+  }
+
+  .portfolio-work p:first-child {
+    font-size: 22px;
+  }
+
+  .portfolio-work-images img {
+    height: 200px;
+    width: auto;
+    margin: 5px;
+  }
+
+  .social-links img {
+    height: 32px;
+  }
 }
+
+
+
 @media (min-width: 960px) {
+  nav a {
+    font-size: 50px;
+  }
+  
+  nav p {
+    font-size: 50px;
+  }
+  
+  h1{
+    font-size: 50px;
+  }
+
+  .avatar-photo {
+    width: 80%;
+  }
+
   .word {
     font-size: 44px;
   }
+
+  .portfolio-work-images img {
+    height: 245px;
+    margin: 10px;
+  }
 }
+
+
+
 @media (min-width: 1280px) {
+  body {
+      background-size: 35%;
+  }
+  
+  .main-description {
+    width: 75%;
+  }
+
+  .skills-text-content {
+    width: 60%;
+    font-size: 17px;
+
+  }
+
   .word {
     font-size: 54px;
   }
-}
-@media (min-width: 1440px) {
-  nav p {
-    font: 500 100px Calibri;
-    margin: -20px 50px 20px 50px;
+
+  .portfolio-content-block {
+    width: 65%;
   }
+}
+
+
+
+@media (min-width: 1440px) {
+  nav {
+    width: 80%;
+  }
+  
+  nav p {
+    font: 500 80px Calibri;
+    margin: -10px 50px 20px 50px;
+  }
+
   nav a {
-    font: 100 100px Arial;
+    font: 100 80px Arial;
     letter-spacing: -10px;
   }
+
   .avatar-photo{
     width: 65%;
   }
+
   .word {
     font-size: 54px;
   }
 }
 
+
+
+@media (min-width: 1720px) {
+  body {
+      background-size: 25%;
+  }
+
+  nav {
+    width: 65%;
+  }
+  
+  .main-description {
+    width: 65%;
+    padding: 40px 20px 40px 20px;
+  }
+  
+  .portfolio-work-images img {
+    height: 360px;
+  }
+}
