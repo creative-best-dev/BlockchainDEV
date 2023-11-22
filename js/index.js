@@ -4,7 +4,6 @@ $(document).ready(function () {
 	// cache the jquery elements to prevent dom queries during the animation events
 	let $run_skills = $(".skills-run");
 	let $word = $(".word");
-	let $header = $("header");
   
 	// when the animation iterates
 	$run_skills.on(
@@ -15,8 +14,8 @@ $(document).ready(function () {
 			$word.text(word);
 	
 			// update the background color
-			hue += 47;
-			$run_skills.css("background-color", "hsl(" + hue + ", 100%, 20%, 20%)");
+			hue += 85;
+			$run_skills.css("background-color", "hsl(" + hue + ", 100%, 85%, 40%)");
 	  }
 	);
 
@@ -27,10 +26,7 @@ $(document).ready(function () {
 		"webkitAnimationIteration oanimationiteration msAnimationIteration animationiteration ",
 		function () {
 		move += 25;
-		$header.css("background-position", "5% " + move + "px");
-		$(".skills").css("background-position", "5% " + move + "px");
-		$(".portfolio").css("background-position", "5% " + move + "px");
-		$("footer").css("background-position", "5% " + move + "px");
+		$("body").css("background-position", "5% " + move + "px");
 		}
 	);
 });
@@ -49,11 +45,24 @@ document.getElementById('moveToResume').onclick = function(e){
 	return false; 
 }
   
-document.getElementById('moveToPortfolio').onclick = function(e){
+// document.getElementById('moveToPortfolio').onclick = function(e){
 	
-	document.getElementById("avatarPhoto").innerHTML="<img src='img/peeps-avatar_change_2.png' class='avatar-photo' alt='Аватар'/>";
-	document.getElementById('portfolio').scrollIntoView();
-	setTimeout(() => {  document.getElementById("avatarPhoto").innerHTML="<img src='img/PhotoAva.png' class='avatar-photo' alt='Аватар'/>";  }, 2000);
+// 	document.getElementById("avatarPhoto").innerHTML="<img src='img/peeps-avatar_change_2.png' class='avatar-photo' alt='Аватар'/>";
+// 	document.getElementById('portfolio').scrollIntoView();
+// 	setTimeout(() => {  document.getElementById("avatarPhoto").innerHTML="<img src='img/PhotoAva.png' class='avatar-photo' alt='Аватар'/>";  }, 2000);
 
-	return false; 
+// 	return false; 
+// }
+
+function openTheme(event, themeName) {
+
+	if (event.currentTarget.className == "portfolio-theme-button active") {
+		document.getElementById(themeName).style.display = "none";
+		event.currentTarget.className = event.currentTarget.className.replace(" active", "");
+		console.log(1);
+	}
+	else {
+		document.getElementById(themeName).style.display = "block";
+		event.currentTarget.className += " active";
+	}
 }
