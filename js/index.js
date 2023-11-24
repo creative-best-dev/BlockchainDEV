@@ -36,14 +36,14 @@ words = [
 	"a little bit python", "adobe photoshop", "yii2", "английский язык", "работа в команде", "figma", "многозадачность", "web-дизайн",
 ];
   
-document.getElementById('moveToResume').onclick = function(e){
+// document.getElementById('moveToResume').onclick = function(e){
 
-	document.getElementById("avatarPhoto").innerHTML="<img src='img/peeps-avatar_change.png' class='avatar-photo' alt='Аватар'/>";
-	document.getElementById('resume').scrollIntoView();
-	setTimeout(() => {  document.getElementById("avatarPhoto").innerHTML="<img src='img/PhotoAva.png' class='avatar-photo' alt='Аватар'/>";  }, 2000);
+// 	document.getElementById("avatarPhoto").innerHTML="<img src='img/peeps-avatar_change.png' class='avatar-photo' alt='Аватар'/>";
+// 	document.getElementById('resume').scrollIntoView();
+// 	setTimeout(() => {  document.getElementById("avatarPhoto").innerHTML="<img src='img/PhotoAva.png' class='avatar-photo' alt='Аватар'/>";  }, 2000);
 
-	return false; 
-}
+// 	return false; 
+// }
   
 // document.getElementById('moveToPortfolio').onclick = function(e){
 	
