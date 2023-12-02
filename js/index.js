@@ -1,19 +1,15 @@
 $(document).ready(function () {
 
 	let hue = 350;
-	// cache the jquery elements to prevent dom queries during the animation events
 	let $run_skills = $(".skills-run");
 	let $word = $(".word");
   
-	// when the animation iterates
 	$run_skills.on(
 		"webkitAnimationIteration oanimationiteration msAnimationIteration animationiteration ",
 		function () {
-			// replace the header with a random word
 			let word = words[Math.floor(Math.random() * words.length)];
 			$word.text(word);
 	
-			// update the background color
 			hue += 85;
 			$run_skills.css("background-color", "hsl(" + hue + ", 100%, 85%, 40%)");
 	  }
@@ -22,7 +18,6 @@ $(document).ready(function () {
 	let move = 5;
 
 	$("div").on(
-		// "" + 1 + "" + 1 + "" + 1 + "" + 1 + "",
 		"webkitAnimationIteration oanimationiteration msAnimationIteration animationiteration ",
 		function () {
 		move += 25;
