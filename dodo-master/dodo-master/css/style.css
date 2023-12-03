@@ -1,0 +1,800 @@
+@font-face {
+    font-family: Nunito;
+    src: url("../fonts/Nunito-Regular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Nunito;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+html, body {
+    margin: 0;
+    width:100%;
+    padding:0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1060px;
+    height: 116px;
+    margin: 0 auto;
+    padding: 25px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+p {
+    font-family: Nunito;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+a {
+    font-family: Nunito;
+    text-decoration: none;
+    color: white;
+    
+}
+
+section {
+    scroll-margin-top: 140px;
+}
+
+ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+button {
+    font-family: Nunito;
+}
+
+.upper-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-pic {
+    margin-right: 15px;
+}
+
+.logo-text-up {
+    margin-bottom: 7px;
+}
+
+.logo-text-up img:first-child {
+    margin-right: 8px;
+}
+
+.logo-text-bot p {
+    font-weight: 400;
+    color: #343434;
+}
+
+.phone-call {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-call p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 0;
+}
+
+.phone-call p:last-child {
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.bottom-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    margin-inline-start: 12px;
+    margin-inline-end: 12px;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: #F96900;
+}
+
+.menu a:first-child {
+    margin-inline-start: 0;
+}
+
+.btn-cart {
+    padding: 9px 20px 9px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #F96900;
+    border-radius: 24px;
+    border-style: none;
+    transition: 0.4s;
+}
+
+.btn-cart:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.gallery {
+    width: 1100px;
+    height: 300px;
+    margin: 0 auto;
+    left: 0px; 
+    top: 0px;
+    padding-bottom: 15px;
+}
+
+.gallery img {
+    background-size: cover;
+}
+
+.new-and-hot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.hot-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hot-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 250px;
+    height: 104px;
+    margin-top: 20px;
+    box-shadow: 0 6px 25px #0605320D;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.hot-card:hover {
+    box-shadow: 0 10px 35px #0303032d;
+}
+
+.hot-card img {
+    width: 76px;
+    height: 76px;
+    margin-left: 18px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 22px;
+}
+
+.card-content p {
+    margin-left: 0;
+    font-size: 14px;
+}
+
+.card-content p:last-child {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.items-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1060px;
+    height: 910px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.item-cards {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 370px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.item-card img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 5px;
+    align-self: center;
+}
+
+.item-name {
+    font-size: 20px;
+    font-weight: 600;
+    width: 224px;
+    margin-bottom: 10px;
+}
+
+.item-desc {
+    display: flex;
+    width: 224px;
+    justify-self: flex-start;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #73798C;
+}
+
+.item-card p {
+    margin-left: 0;
+}
+
+.btn-and-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    bottom:0;
+}
+
+.item-price {
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 46px;
+}
+
+.btn-add-to-cart {
+    padding: 9px 29px 9px 29px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 24px;
+    color: #D15700;
+    background-color: #FFF0E6;
+    border-style: none;
+    transition: .5s;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #F96900;
+    color: white;
+}
+
+#snacks .item-card {
+    height: 425px;
+}
+
+#snacks {
+    height: 1020px;
+}
+
+#desserts .item-card {
+    height: 406px;
+}
+
+#desserts {
+    height: 980px;
+}
+
+#drinks .item-card {
+    height: 387px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 134px;
+    background: #464C55;
+    bottom:0;
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+}
+
+.up-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.list-foot {
+    display: flex;
+    flex-direction: column;
+    justify-self: normal;
+}
+
+.list-foot p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.list-foot ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    opacity: .7;
+    transition: .5s;
+}
+
+.list-foot ul li:hover {
+    opacity: 1;
+}
+
+.app-link {
+    margin-left: auto; 
+    margin-right: 0;
+    height: 41px;
+}
+
+.app-link a {
+    padding: 0;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 24px;
+    border-style: none;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 29px;
+}
+
+.number {
+    font-size: 26px;
+    margin: 0;
+}
+
+.call-us {
+    font-size: 15px;
+    opacity: .5;
+    margin: 0;
+}
+
+.mail {
+    font-size: 15px;
+    margin-top: 26px;
+}
+
+.mid-footer {
+    display: flex;
+    flex-direction: row;
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 85px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.mid-footer p {
+    font-size: 16px;
+    opacity: .7;
+}
+
+.income-foot {
+    margin-right: 156px;
+}
+
+.income-foot p:first-child, .pizzerias-foot p:first-child {
+    font-size: 26px;
+    opacity: 1;
+    margin-bottom: 12px;
+}
+
+.bottom-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.idk a {
+    opacity: .7;
+    transition: .5s;
+}
+
+.idk a:hover {
+    opacity: 1;
+}
+
+.bottom-footer a, p {
+    font-size: 16px;
+}
+
+.bottom-footer a {
+    margin-right: 20px;
+}
+
+.social-links a {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    width: 184px;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.criple {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 320px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    html, body {
+        width: 320px;
+        height: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: auto;
+        height: auto;
+        margin: 12px 0 0 16px;
+        padding: 0;
+        position: relative;
+    }
+
+    section {
+        scroll-margin-top: 40px;
+    }
+
+    section h1 {
+        margin-left: 16px;
+    }
+
+    .logo {
+        align-items: center;
+        width: 156px;
+        height: 23px;
+    }
+
+    .logo-pic {
+        content: url("../img/mobile/logo/dodo-pic.png");
+        margin-right: 8.25px;
+    }
+
+    .logo-text-up img:first-child {
+        content: url("../img/mobile/logo/Group-1.png");
+        margin-right: 5.14px;
+    }
+
+    .logo-text-up img:last-child {
+        content: url("../img/mobile/logo/Group.png");
+    }
+
+    .logo-text-up {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    .logo-text-bot, .phone-call, .btn-cart, .menu {
+        display: none;
+    }
+
+    .gallery {
+        width: auto;
+        height: auto;
+        margin: 0;
+        content: url("../img/mobile/carousel/Rectangle\ 44.png");
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    .new-and-hot {
+        margin-top: 0;
+        margin-inline-start: 16px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .new-and-hot h2 {
+        margin-top: 0px;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .hot-cards {
+        width: 300px;
+        height: 150px;
+        white-space: nowrap;
+        overflow-x: auto;
+        align-items: center;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    .hot-cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hot-card {
+        min-width: 240px;
+        margin-right: 10px;
+        margin-top: 0%;
+    }
+
+    .hot-card img {
+        height: 84px;
+        width: 84px;
+    }
+
+    .card-content {
+        margin-left: 8px;
+    }
+
+    .item-cards {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .item-card {
+        width: 288px;
+        height: auto;
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid #F3F3F7;
+        padding-bottom: 17px;
+        padding-top: 16px;
+    }
+
+    .item-cards .item-card:last-child {
+        border-style: none;
+    }
+
+    .item-name {
+        width: 147px;
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+    
+    .mob-desc {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-left: 7px;
+    }
+
+    .item-desc {
+        max-width: 158px;
+        font-size: 12px;
+        margin-bottom: 8px;
+        overflow-wrap: anywhere;
+    }
+
+    .item-price {
+        display: none;
+    }
+
+    .item-card img {
+        display: flex;
+        align-self: flex-start;
+        width: 115px;
+        height: 115px;
+    }
+
+    .btn-and-price {
+        position: relative;
+    }
+
+    .btn-add-to-cart {
+        padding: 7px 20px 6px 20px;
+        font-size: 14px;
+    }
+
+    .items-style {
+        margin-top: 0;
+    }
+
+    .static-mobile-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        margin: 0 auto;
+        width: 300px;
+        height: 42px;
+        z-index: 101;
+        background-color: white;
+        white-space: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        padding: 13px 0 12px 0;
+    }
+
+    .static-mobile-menu a {
+        color: #464C55;
+        font-weight: 600;
+        padding: 6px 15px 6px 15px;
+        background-color: #F3F3F7;
+        border-radius: 24px;
+        transition: .5s;
+    }
+
+    .static-mobile-menu a:hover {
+        background-color: #FFF0E6;
+        color: #D15700;
+    }
+
+    .static-mobile-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    #pizza, #combo, #snacks, #desserts, #drinks {
+        width: auto;
+        height: auto;
+    }
+
+    #snacks .item-card {
+        height: auto;
+    }
+
+    #desserts .item-card {
+        height: auto;
+    }
+
+    #drinks .item-card {
+        height: auto;
+    }
+
+    #pizza h1 {
+        display: none;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+
+    .up-footer {
+        flex-direction: column;
+        width: 288px;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    .list-foot {
+        margin-bottom: 30px;
+    }
+
+    .list-foot p {
+        margin-bottom: 12px;
+    }
+
+    .list-foot:last-child {
+        margin-bottom: 0;
+    }
+
+    .number, .call-us {
+        display: none;
+    }
+
+    .contacts-foot {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contacts {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .mail {
+        font-weight: 400;
+        opacity: .9;
+    }
+
+    .mid-footer {
+        display: none;
+    }
+
+    .app-link {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        align-self: unset;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        justify-content: unset;
+        width: 288px;
+    }
+
+    .social-links a {
+        margin-right: 6px;
+    }
+
+    .bottom-footer {
+        width: 288px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+
+    .idk {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .idk a {
+        margin-bottom: 10px;
+    }
+
+    .logo-footer .logo-text-up img:first-child {
+        content: url("../img/mobile/bott_logo/Group-1.png");
+    }
+
+    .logo-footer .logo-text-up img:last-child {
+        content: url("../img/mobile/bott_logo/Group.png");
+    }
+}
+
+@media screen and (min-width: 321px) {
+    .static-mobile-menu {
+        display: none;
+    }
+}
