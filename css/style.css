@@ -215,7 +215,6 @@ html{
   .portfolio-content-block{
     width: 90%;
     text-align: left;
-    letter-spacing: 2px;
     font: 400 15px Arial;
   }
 
@@ -223,6 +222,7 @@ html{
     text-align: center;
     text-transform: uppercase;
     font: 400 30px Arial;
+    letter-spacing: 1px;
   }
 
   .portfolio-content-block hr{
