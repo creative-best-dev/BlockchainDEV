@@ -1,0 +1,19 @@
+{
+   "titleSkills": "Knowledge Areas",
+   "firstSubtitleSkills": "Technical Skills:",
+   "secondSubtitleSkills": "Tools and Methodologies:",
+   "titleExperience": "Experience",
+   "firstItemTitle": "Senior Software Developer",
+   "secondItemTitle": "Web3 Full Stack Developer",
+   "thirdItemTitle": "Web3 Developer",
+   "experienceItemSubtitle": "company:",
+   "titleBiography": "biography",
+   "phraseBiography": "Continuous learning is the key to opening new horizons.",
+   "firstDescriptionBiography": "My name is Ruven, I am a Blockchain Full Stack Developer engaged in the development of interactive and adaptive web applications. ",
+   "secondDescriptionBiography": "I remain committed to teamwork and am open to opportunities for employment in a company where I could apply my skills and continue learning from experienced colleagues.",
+   "thirdDescriptionBiography": "My approach to work is a combination of practical knowledge, flexibility, and striving for excellence. Every new project is a chance for me to improve my skills and contribute to the success of the team.",
+   "Download RP": "Download CV",
+   "firstItemResponsibilities": "A cutting-edge centralized exchange (CEX) platform, I was responsible for architecting and developing secure, scalable, and high-performance features across the entire tech stack, including frontend (React, TypeScript), backend (Node.js), and smart contract development (Solidity). My role involved both leadership and hands-on development in a fast-paced environment with a strong focus on security, efficiency, and user experience.",
+   "secondItemResponsibilities": "Liquidity protocol that provides lending, borrowing function with liquidity provide using NFT and Oracle",
+   "thirdItemResponsibilities": "Developed Blockchain Data yield farming and staking platform and NFT Marketplace platform. "
+}
